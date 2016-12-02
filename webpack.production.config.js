@@ -42,6 +42,10 @@ module.exports = {
       },
     ]
   },
+  "externals": {
+    "react": "React",
+    "react-dom": "ReactDOM"
+  },
   "plugins": [
     new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
