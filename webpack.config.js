@@ -4,11 +4,9 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
 module.exports = {
-  entry: {
-   app: [ "./index.js" ]
-  },
+  entry: path.join(__dirname, "index.js"),
   output: {
-    path: path.resolve(__dirname + "/build"),
+    path: __dirname,
     publicPath: "build/",
     filename: "app.js"
   },
@@ -18,7 +16,14 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.jsx?$/, loader: "babel-loader", exclude: /node_modules/ },
+      { test: /\.jsx?$/,
+        loader: "babel",
+        exclude: /node_modules/,
+        include: __dirname,
+        query: {
+          presets: ['latest', 'react', 'react-hmre']
+        }
+      },
       {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)$/,
         loader: 'url-loader?limit=9999999',

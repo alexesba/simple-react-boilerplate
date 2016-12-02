@@ -1,6 +1,7 @@
 var path = require("path");
 var lodash = require("lodash");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const loaderString = [
   'css?minimize&modules&localIdentName=[hash:base64:4]',
@@ -16,7 +17,6 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname + "/build"),
-    publicPath: "build/",
     filename: "app.js"
   },
   resolve: {
@@ -43,6 +43,9 @@ module.exports = {
     ]
   },
   "plugins": [
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+    new HtmlWebpackPlugin({
+      template: "index.ejs"
+    })
   ]
 }
