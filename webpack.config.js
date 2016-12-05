@@ -7,12 +7,13 @@ module.exports = {
   entry: path.join(__dirname, "index.js"),
   output: {
     path: __dirname,
-    publicPath: "build/",
     filename: "app.js"
   },
   devServer: {
+    contentBase: "build",
     inline: true,
-    hot: true
+    hot: true,
+    bail: true
   },
   module: {
     loaders: [
@@ -21,7 +22,7 @@ module.exports = {
         exclude: /node_modules/,
         include: __dirname,
         query: {
-          presets: ['latest', 'react', 'react-hmre']
+          presets: ['react-hmre']
         }
       },
       {

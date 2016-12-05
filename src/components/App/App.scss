@@ -1,10 +1,17 @@
-.h1 {
-  color: red;
-  &:hover {
-    color: green;
+a {
+  text-decoration: none;
+  font-size: 30px;
+  cursor: pointer;
+  .react-logo {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    -webkit-mask: url(./react.svg) center / contain no-repeat;
   }
-}
-
-.img {
-  background: url(./demo.jpeg);
+  p {
+    bottom: 0;
+    text-align: center;
+    vertical-align: bottom;
+  }
 }

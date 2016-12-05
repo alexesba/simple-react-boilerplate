@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import App from "./src/components/App";
+import { render } from "react-dom";
+import Router from "./src/routes";
+import store from "./src/store";
 
-ReactDOM.render(<App />, document.getElementById("App"));
+render(Router(store), document.getElementById("App"));
 
