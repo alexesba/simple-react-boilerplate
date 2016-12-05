@@ -22,7 +22,7 @@ module.exports = {
         exclude: /node_modules/,
         include: __dirname,
         query: {
-          presets: ['react-hmre']
+          presets: ['react-hmre', 'react', 'latest', "stage-0"]
         }
       },
       {
