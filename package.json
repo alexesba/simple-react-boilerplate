@@ -25,7 +25,7 @@
   },
   "jest": {
     "rootDir": ".",
-    "collectCoverage": false,
+    "collectCoverage": true,
     "transform": {
       ".js": "<rootDir>/node_modules/babel-jest"
     },

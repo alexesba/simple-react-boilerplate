@@ -8,7 +8,7 @@
 					"babel-plugin-webpack-loaders",
 				{
 					"config": "./runtime.webpack.config.js",
-					"verbose": true,
+					"verbose": false,
 				}
 				]
 			]
