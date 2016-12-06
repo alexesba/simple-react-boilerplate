@@ -1,6 +1,6 @@
 import React from "react";
 import {Router, Route, browserHistory } from "react-router";
-import AppContainer from "./containers/AppContainer";
+import { AppContainer } from "./components/App";
 import NotFound from "./components/NotFound";
 
 import { Provider } from "react-redux";

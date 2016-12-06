@@ -1,4 +1,17 @@
 {
-  "presets": ["react", "latest", "stage-0"],
-  "plugins": [ "transform-runtime" ]
+	"presets": ["react", "latest", "stage-0"],
+	"plugins": [ "transform-runtime" ],
+	"env": {
+		"test": {
+			"plugins": [
+				[
+					"babel-plugin-webpack-loaders",
+				{
+					"config": "./runtime.webpack.config.js",
+					"verbose": true,
+				}
+				]
+			]
+		}
+	}
 }

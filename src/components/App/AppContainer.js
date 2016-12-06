@@ -1,10 +1,10 @@
 import { connect } from "react-redux";
-import App from "../../components/App";
-import { changeColor } from "../../actions/app";
+import App from "./App";
+import { changeColor } from "./AppActions";
 
 const mapStateToProps = (state) => {
   return {
-    color: state.app.color
+    color: state.AppReducer.color
   }
 }
 
@@ -14,9 +14,9 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const AppContainer = connect(
+const Container = connect(
   mapStateToProps,
   mapDispatchToProps
 )(App);
 
-export default AppContainer;
+export default Container;

@@ -4,7 +4,7 @@ import { browserHistory } from 'react-router'
 import { routerMiddleware } from "react-router-redux";
 
 // Import reducers
-import  app  from "./reducers/app";
+import  { AppReducer } from "./components/App";
 
 const reactRouterReduxMiddleware = routerMiddleware(browserHistory);
 
@@ -13,7 +13,7 @@ let createStoreWithMiddleware = applyMiddleware(
 )(createStore);
 
 let reducers = combineReducers({
-  app
+  AppReducer
 });
 
 export default createStoreWithMiddleware(reducers);
