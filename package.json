@@ -21,7 +21,8 @@
     "clean": "rm -rf build",
     "compile": "webpack --config webpack.production.config.js",
     "build": "npm run clean && npm run compile",
-    "test": "BABEL_DISABLE_CACHE=1 NODE_ENV=test jest"
+    "test": "BABEL_DISABLE_CACHE=1 NODE_ENV=test jest",
+    "coverage": "opener coverage/lcov-report/index.html"
   },
   "jest": {
     "rootDir": ".",
@@ -67,6 +68,7 @@
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "node-sass": "^3.13.0",
+    "opener": "^1.4.2",
     "postcss-color-rebeccapurple": "^2.0.1",
     "postcss-loader": "^1.1.1",
     "postcss-scss": "^0.4.0",
