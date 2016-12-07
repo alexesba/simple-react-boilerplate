@@ -1,6 +1,7 @@
 var path = require("path");
 var lodash = require("lodash");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 
 module.exports = {
@@ -10,7 +11,6 @@ module.exports = {
     filename: "app.js"
   },
   devServer: {
-    contentBase: "build",
     inline: true,
     hot: true,
     bail: true
@@ -38,5 +38,6 @@ module.exports = {
       ]
       },
     ]
-  }
+  },
+  "plugins": [ new HtmlWebpackPlugin({template: "index.html" })]
 }
