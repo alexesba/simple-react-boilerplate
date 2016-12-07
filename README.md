@@ -1,4 +1,4 @@
-# Simple react boilerplate
+# Simple [**React**](https://facebook.github.io/react/) boilerplate
 
 > Create [**React**](https://facebook.github.io/react/) applications and avoid spent time configuring tasks for transpiling scss and javascripts
 This project has born with the main idea to have something up and running in a couple of minutes. It also provides you 
