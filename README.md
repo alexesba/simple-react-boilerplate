@@ -30,11 +30,9 @@ a structure of files to keep your code organized in packages called **Components
 │   ├── index.html
 │   └── style.css
 ├── coverage
-├── index.ejs #ejs template which is used on production env.
-├── index.html #index file used for development env.
+├── index.ejs #ejs template which is used on production and development env.
 ├── index.js #entry file for webpack compilations in other word our main file
 ├── package.json #package dependencies and dev-dependcies.
-├── runtime.webpack.config.js
 ├── src 
 │   ├── components
 │   │   ├── App
@@ -52,8 +50,9 @@ a structure of files to keep your code organized in packages called **Components
 │   │       └── package.json
 │   ├── routes.js
 │   └── store.js
-├── webpack.config.js
-├── webpack.production.config.js
+├── webpack.config.js #config file used for development
+├── webpack.production.config.js #config file used for production
+├── webpack.test.config.js #used to compile 
 └── yarn.lock
 ```
 
