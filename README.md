@@ -52,7 +52,6 @@ a structure of files to keep your code organized in packages called **Components
 │   └── store.js
 ├── webpack.config.js #config file used for development
 ├── webpack.production.config.js #config file used for production
-├── webpack.test.config.js #used to compile 
-└── yarn.lock
+├── webpack.test.config.js #used to compile and run the suite test
+└── yarn.lock #used to install all dependencies if you are using yarn
 ```
-
