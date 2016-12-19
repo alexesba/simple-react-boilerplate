@@ -2,6 +2,8 @@ var path = require("path");
 var lodash = require("lodash");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+var HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
+
 
 const loaderString = [
   'css?minimize&modules&localIdentName=[hash:base64:4]',
@@ -49,7 +51,12 @@ module.exports = {
   "plugins": [
     new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
+      title: "Awesome React!!",
       template: "index.ejs"
-    })
+    }),
+    new HtmlWebpackExternalsPlugin([
+      { name: "react", var: "React", url: "https://unpkg.com/react@15.4.1/dist/react.js" },
+      { name: "react-dom", var: "ReactDOM", url: "https://unpkg.com/react-dom@15.4.1/dist/react-dom.js" }
+    ])
   ]
 }

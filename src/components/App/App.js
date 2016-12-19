@@ -9,14 +9,13 @@ class App extends Component {
     const { onChangeColor, color } = this.props;
     return (
 			<div>
-				<a>
-					<div styleName="react-logo" onClick={ onChangeColor } style={{ backgroundColor: color}}>
-					</div>
-				</a>
+        <div styleName="react-logo" onClick={ onChangeColor } style={{ color}}>
+          <span/>
+        </div>
 				<p>
-					<Link to="awesome-react" style={{color}}>
-						Awesome react!
-					</Link>
+          <Link to="awesome-react" style={{color}}>
+            Awesome React!
+          </Link>
 				</p>
 			</div>
     );
