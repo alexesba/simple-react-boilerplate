@@ -1,10 +1,12 @@
-# Simple [**React**](https://facebook.github.io/react/) boilerplate
+# Simple Rebo
+
+## Simple [**React**](https://facebook.github.io/react/) boilerplate
 
 > Create [**React**](https://facebook.github.io/react/) applications and avoid spent time configuring tasks for transpiling scss and javascripts
 This project has born with the main idea to have something up and running in a couple of minutes. It also provides you 
 a structure of files to keep your code organized in packages called **Components** this boilerplate integrates [**Redux**](https://github.com/reactjs/redux)
 
-# Technologies implemented:
+## Technologies implemented:
   - *babel*
   - *es6*
   - *jsx*
@@ -13,14 +15,14 @@ a structure of files to keep your code organized in packages called **Components
   - *scss*
 
 
-# Available tasks/commands:
+## Available tasks/commands:
 * `npm start:` runs the application in development mode it will open your browser in a tab and display a small demo
 * `npm run build`: compiles the whole src directory whithin the `build` directory 
 * `npm run test`: runs the test suite.
 * `npm coverage`: opens the coverage results in the browser
 
 
-## File Structure
+## File Structure:
 ```sh
 .
 ├── README.md
