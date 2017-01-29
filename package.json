@@ -17,7 +17,7 @@
     "redux-thunk": "^2.1.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress --inline --hot --open",
+    "start": "webpack-dev-server --hot",
     "clean": "rm -rf build",
     "compile": "webpack --config webpack.production.config.js",
     "build": "npm run clean && npm run compile",

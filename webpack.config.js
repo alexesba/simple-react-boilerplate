@@ -11,9 +11,11 @@ module.exports = {
     filename: "app.js"
   },
   devServer: {
-    inline: true,
+    historyApiFallback: true,
     hot: true,
-    bail: true
+    inline: true,
+    open: true,
+    progress: true
   },
   module: {
     loaders: [
