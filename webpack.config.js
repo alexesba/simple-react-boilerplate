@@ -7,8 +7,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: path.join(__dirname, "index.js"),
   output: {
-    path: __dirname,
-    filename: "app.js"
+    publicPath: '/'
   },
   devServer: {
     historyApiFallback: true,
