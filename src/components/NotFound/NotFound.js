@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import { Link } from "react-router";
 import style from "./style.scss";
+import { routeFor } from "../../common";
 
 class NotFound extends Component {
 
@@ -17,7 +18,7 @@ class NotFound extends Component {
     return(
       <div styleName="_404">
         Page: <span> { pathname } </span> {this.props.message }
-        <Link to="/"> Home </Link>
+        <Link to={ routeFor("/") }> Home </Link>
       </div>
     );
   }
